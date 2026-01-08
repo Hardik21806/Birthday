@@ -1,0 +1,8 @@
+
+{
+  "name": "Kalii's Birthday Extravaganza",
+  "description": "A sophisticated and beautifully animated birthday celebration app for Palak, featuring custom AI-generated wishes and elegant blue-toned girlish aesthetics.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
