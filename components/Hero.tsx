@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -44,10 +43,10 @@ const Hero: React.FC = () => {
         </span>
         <h1 className="text-6xl md:text-8xl font-serif font-bold text-slate-900 mb-6 tracking-tight">
           Happy Birthday, <br />
-          <span className="gradient-text">Palak!</span>
+          <span className="gradient-text">Subhi!</span>
         </h1>
         <p className="text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-          Celebrating the grace of a <span className="text-sky-600 font-bold">chaotic and anger queen</span>, our favorite <span className="text-sky-500 font-semibold italic">Kalii Dayan</span>.
+          Celebrating the grace of a <span className="text-sky-600 font-bold">chaotic queen</span>, our favorite <span className="text-sky-500 font-semibold italic">Gen Z Icon</span>.
         </p>
         
         <motion.div

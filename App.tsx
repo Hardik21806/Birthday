@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
 import WishCard from './components/WishCard';
 import InteractiveCake from './components/InteractiveCake';
 import { BirthdayWish } from './types';
-import { generatePalakWish } from './services/geminiService';
+import { generateBirthdayWish } from './services/geminiService';
 
 const App: React.FC = () => {
   const [wish, setWish] = useState<BirthdayWish | null>(null);
@@ -14,14 +13,13 @@ const App: React.FC = () => {
 
   const fetchWish = async () => {
     setLoading(true);
-    const newWish = await generatePalakWish();
+    const newWish = await generateBirthdayWish();
     setWish(newWish);
     setLoading(false);
   };
 
   useEffect(() => {
     fetchWish();
-    // Auto-show celebration after a delay
     setTimeout(() => setShowConfetti(true), 1500);
   }, []);
 
@@ -75,13 +73,13 @@ const App: React.FC = () => {
             "Aging like fine wine, but staying as chaotic as ever."
           </p>
           <p className="text-sky-400/60 text-sm tracking-widest uppercase">
-            Stay Awesome Palak (The Real Kalii Dayan)
+            Stay Awesome Subhi
           </p>
           <div className="mt-8 pt-8 border-t border-sky-900/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50">
             <p>© 2024 Built with ❤️ for our favorite chaotic queen</p>
             <div className="flex gap-6">
-              <span className="hover:text-sky-300 cursor-pointer transition">Anger Management Crew</span>
-              <span className="hover:text-sky-300 cursor-pointer transition">Dayan Vibes</span>
+              <span className="hover:text-sky-300 cursor-pointer transition">Bestie Vibes Only</span>
+              <span className="hover:text-sky-300 cursor-pointer transition">Chaos Crew</span>
             </div>
           </div>
         </div>

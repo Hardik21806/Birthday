@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -66,7 +65,7 @@ const InteractiveCake: React.FC = () => {
           whileInView={{ opacity: 1 }}
           className="mb-12"
         >
-          <h2 className="text-4xl font-serif font-bold text-slate-800 mb-4">Make a Wish, Palak</h2>
+          <h2 className="text-4xl font-serif font-bold text-slate-800 mb-4">Make a Wish, Subhi</h2>
           <p className="text-slate-500">
             {isBlown 
               ? "Your wish is being processed by the universe! ✨" 
